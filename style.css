@@ -1,0 +1,24 @@
+:root {
+  --cyan-str: hsl(172, 67%, 45%);
+  --cyan-drk: hsl(183, 100%, 15%);
+  --cyan-drk-gry: hsl(186, 14%, 43%);
+  --cyan-gry: hsl(184, 14%, 56%);
+  --cyan-lght-gry: hsl(185, 41%, 84%);
+  --cyan-vry-light: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+  --fz-form: 24px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Space Mono";
+}
