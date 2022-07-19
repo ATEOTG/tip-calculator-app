@@ -22,6 +22,7 @@ html {
 body {
   height: 100vh;
   font-family: "Space Mono", sans-serif;
+  font-weight: 700;
   background-color: var(--cyan-lght-gry);
 }
 
@@ -103,5 +104,28 @@ body {
 }
 
 .calculator-cont {
-  padding: 0 2em;
+  padding: 0 2.5em;
+}
+/* Styling Div with Calculator Class */
+.label-bill-amount {
+  color: var(--cyan-drk-gry);
+}
+
+#bill-amount {
+  border: none;
+  font-family: "Space Mono", sans-serif;
+  font-size: var(--fz-form);
+  color: var(--cyan-drk);
+  border-radius: 5px;
+  text-align: right;
+  background-color: var(--cyan-vry-light);
+  background-image: url("images/icon-dollar.svg");
+  background-position-y: center;
+  background-position-x: 0.5em;
+  background-repeat: no-repeat;
+  padding: 0.3em 0.6em;
+}
+#bill-amount:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem hsl(172, 67%, 45%);
 }
