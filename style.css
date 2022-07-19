@@ -34,7 +34,7 @@ body {
 
 .logo {
   align-self: center;
-  margin: 3em 0;
+  margin: 4em 0;
 }
 
 .calculator-cont {
@@ -108,7 +108,7 @@ body {
 .calculator-cont {
   padding: 0 3.2em;
 }
-/* Styling Div with Calculator Class */
+/* Styling Div with Calculator Class elements */
 .label-bill-amount {
   color: var(--cyan-drk-gry);
 }
@@ -183,7 +183,7 @@ body {
   font-size: var(--fz-form);
 }
 
-/*Styling for number-people-box form  */
+/*Styling for number-people-box form elements  */
 .label-number-people {
   color: var(--cyan-drk-gry);
 }
@@ -209,4 +209,29 @@ body {
 #number-people:focus {
   outline: none;
   box-shadow: 0 0 0 0.2rem hsl(172, 67%, 45%);
+}
+
+/* Styling tip-box elements */
+.tip-amount-text {
+  color: var(--white);
+}
+
+.per-person-text {
+  font-size: 1.3rem;
+  color: var(--cyan-gry);
+}
+
+.currency-text {
+  font-size: 3.2rem;
+  color: var(--cyan-str);
+}
+
+.reset {
+  border: none;
+  border-radius: 5px;
+  font-family: "Space Mono", sans-serif;
+  font-size: 2rem;
+  background-color: var(--cyan-str);
+  color: var(--cyan-drk);
+  padding: 0.5em 0;
 }
