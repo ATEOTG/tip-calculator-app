@@ -1,5 +1,7 @@
 "use strict";
 
+const resetBtn = document.querySelector(".reset");
+
 const billForm = document.querySelector(".bill");
 const numberForm = document.querySelector(".number-people-box");
 const customForm = document.querySelector(".custom-form");
@@ -12,10 +14,10 @@ const tipAmount = document.querySelector("#curr1");
 const totalAmount = document.querySelector("#curr2");
 
 const tipPercents = document.querySelectorAll(".tip-number");
-
 // default value should be 15
-let currChosenPercent = 15;
-let currClicked = tipPercents[2].classList.add("clicked");
+let currChosenPercent = 0.15;
+let currClicked = tipPercents[2];
+currClicked.classList.add("clicked");
 
 // need to cut our value to two decimal places (without rounding)
 const twoDecimal = function (val) {
@@ -49,8 +51,6 @@ const enterCalc = function () {
   //   display calculations
   tipAmount.innerHTML = `$${twoDecimal(tipValue)}`;
   totalAmount.innerHTML = `$${totalValue.toFixed(2)}`;
-  //   clear each input value
-  //   [billInpt, customInpt, peopleInpt].forEach((val) => (val.value = ""));
 };
 
 // add to all the forms the submit event
@@ -82,6 +82,19 @@ tipPercents.forEach((tip) =>
 customInpt.addEventListener("click", function (e) {
   currClicked.classList.remove("clicked");
   currChosenPercent = 0;
+});
+
+// reset each value when clicking the reset button
+resetBtn.addEventListener("click", function () {
+  currClicked.classList.remove("clicked");
+  currChosenPercent = 0.15;
+  currClicked = tipPercents[2];
+  currClicked.classList.add("clicked");
+
+  tipAmount.innerHTML = "$0.00";
+  totalAmount.innerHTML = "$0.00";
+  document.getElementById("custom").value = "";
+  [billInpt, customInpt, peopleInpt].forEach((val) => (val.value = ""));
 });
 
 // error when customVar is zero and curr Chosen Percent is 0
