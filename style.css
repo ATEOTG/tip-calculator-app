@@ -59,6 +59,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 4em;
+  margin-top: 3em;
 }
 
 .bill,
@@ -99,4 +100,8 @@ body {
 
 .tip-box {
   background-color: var(--cyan-drk);
+}
+
+.calculator-cont {
+  padding: 0 2em;
 }
