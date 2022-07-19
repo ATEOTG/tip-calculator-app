@@ -101,6 +101,8 @@ body {
 
 .tip-box {
   background-color: var(--cyan-drk);
+  padding: 2em 1.5em;
+  border-radius: 1.5em;
 }
 
 .calculator-cont {
@@ -179,4 +181,32 @@ body {
   font-family: "Space Mono", sans-serif;
   font-weight: 700;
   font-size: var(--fz-form);
+}
+
+/*Styling for number-people-box form  */
+.label-number-people {
+  color: var(--cyan-drk-gry);
+}
+
+#number-people {
+  border: none;
+  font-family: "Space Mono", sans-serif;
+  font-size: var(--fz-form);
+  color: var(--cyan-drk);
+  border-radius: 5px;
+  text-align: right;
+  background-color: var(--cyan-vry-light);
+  background-image: url("images/icon-person.svg");
+  background-position-y: center;
+  background-position-x: 0.5em;
+  background-repeat: no-repeat;
+  padding: 0.3em 0.6em;
+}
+
+#number-people::placeholder {
+  color: var(--cyan-gry);
+}
+#number-people:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem hsl(172, 67%, 45%);
 }
