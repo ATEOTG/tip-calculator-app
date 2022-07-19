@@ -19,13 +19,14 @@
   <body>
     <main class="container">
       <img class="logo" src="images/logo.svg"/>
+    <div class="calculator-cont">
       <div class="calculator">
         <form class="bill">
-          <label for="bill-amount">Bill</label>
+          <label class = "label-bill-amount"for="bill-amount">Bill</label>
           <input id="bill-amount" type="text" placeholder="0"/>
         </form>
         <div class="tip-select">
-          <p>Select Tip %</p>
+          <p class="tip-percent">Select Tip %</p>
           <p class="tip-number"> 5%</p>
           <p class="tip-number"> 10%</p>
           <p class="tip-number"> 15%</p>
@@ -34,7 +35,7 @@
           <input id="custom" type="text" placeholder="Custom"></input>
         </div>
         <form class="number-people-box">
-          <label for="number-people">Number of People</label>
+          <label class = "label-number-people"for="number-people">Number of People</label>
           <input id="number-people" type="text" placeholder="0"/>
         </form>
       </div>
@@ -58,7 +59,6 @@
         </div>
         <button class="reset">Reset</button>
       </div>
-
     </main>
   </body>
 </html>

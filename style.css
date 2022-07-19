@@ -20,5 +20,35 @@ html {
 }
 
 body {
-  font-family: "Space Mono";
+  height: 100vh;
+  font-family: "Space Mono", sans-serif;
+  background-color: var(--cyan-lght-gry);
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+}
+
+.logo {
+  align-self: center;
+  margin: 3em 0;
+}
+
+.calculator-cont {
+  height: inherit;
+  padding-top: 3em;
+  border-top-left-radius: 2.5rem;
+  border-top-right-radius: 2.5rem;
+  background-color: var(--white);
+}
+
+.label-bill-amount,
+.tip-percent,
+.label-number-people,
+.tip-amount-text {
+  font-size: 1.6rem;
+}
+
+/*  CALCULATOR SEC*/
