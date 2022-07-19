@@ -154,11 +154,9 @@ body {
   padding: 0.3em 0;
 }
 
-#fifteen {
-  background-color: var(--cyan-str);
-  color: var(--cyan-drk);
+.custom-form {
+  display: grid;
 }
-
 #custom {
   border: none;
   text-align: right;
@@ -234,4 +232,10 @@ body {
   background-color: var(--cyan-str);
   color: var(--cyan-drk);
   padding: 0.5em 0;
+}
+
+/* styling on click*/
+.clicked.tip-number {
+  background-color: var(--cyan-str);
+  color: var(--cyan-drk);
 }
