@@ -104,7 +104,7 @@ body {
 }
 
 .calculator-cont {
-  padding: 0 2.5em;
+  padding: 0 3.2em;
 }
 /* Styling Div with Calculator Class */
 .label-bill-amount {
@@ -125,7 +125,58 @@ body {
   background-repeat: no-repeat;
   padding: 0.3em 0.6em;
 }
+
+#bill-amount::placeholder {
+  color: var(--cyan-gry);
+}
 #bill-amount:focus {
   outline: none;
   box-shadow: 0 0 0 0.2rem hsl(172, 67%, 45%);
+}
+
+.tip-percent {
+  color: var(--cyan-drk-gry);
+}
+
+.tip-number-cont {
+  column-gap: 1.7em;
+  row-gap: 1.6em;
+}
+
+.tip-number {
+  text-align: center;
+  font-size: var(--fz-form);
+  color: var(--white);
+  background-color: var(--cyan-drk);
+  border-radius: 5px;
+  padding: 0.3em 0;
+}
+
+#fifteen {
+  background-color: var(--cyan-str);
+  color: var(--cyan-drk);
+}
+
+#custom {
+  border: none;
+  text-align: right;
+  color: var(--cyan-drk);
+  border-radius: 5px;
+  background-color: var(--cyan-vry-light);
+  width: 100%;
+  font-family: "Space Mono", sans-serif;
+  font-size: var(--fz-form);
+  padding: 0 0.5em;
+}
+
+#custom:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem hsl(172, 67%, 45%);
+}
+
+#custom::placeholder {
+  color: #192424;
+  font-family: "Space Mono", sans-serif;
+  font-weight: 700;
+  font-size: var(--fz-form);
 }
