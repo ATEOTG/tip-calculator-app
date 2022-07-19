@@ -37,7 +37,10 @@ body {
 }
 
 .calculator-cont {
+  display: flex;
+  flex-direction: column;
   height: inherit;
+  gap: 4em;
   padding-top: 3em;
   border-top-left-radius: 2.5rem;
   border-top-right-radius: 2.5rem;
@@ -51,4 +54,49 @@ body {
   font-size: 1.6rem;
 }
 
-/*  CALCULATOR SEC*/
+/*  CONTAINERS*/
+.calculator {
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+}
+
+.bill,
+.number-people-box,
+.tip-box,
+.tip-amount-text-cont {
+  display: flex;
+  flex-direction: column;
+}
+
+.bill,
+.number-people-box {
+  gap: 1em;
+}
+
+.tip-number-cont {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.tip-amount,
+.total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tip-percent {
+  margin-bottom: 0.5em;
+}
+
+.tip-box {
+  gap: 2.5em;
+}
+
+.tip-amount-text-cont {
+  gap: 0.3em;
+}
+
+.tip-box {
+  background-color: var(--cyan-drk);
+}
