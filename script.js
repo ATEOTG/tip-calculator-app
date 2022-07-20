@@ -108,6 +108,9 @@ resetBtn.addEventListener("click", function () {
   totalAmount.innerHTML = "$0.00";
   document.getElementById("custom").value = "";
   [billInpt, customInpt, peopleInpt].forEach((val) => (val.value = ""));
+
+  peopleInpt.removeAttribute("error");
+  errorZero.classList.remove("error");
 });
 
 // error when customVar is zero and curr Chosen Percent is 0

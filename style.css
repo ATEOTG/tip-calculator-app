@@ -30,6 +30,7 @@ body {
   display: flex;
   flex-direction: column;
   height: inherit;
+  align-items: center;
 }
 
 .logo {
@@ -46,6 +47,7 @@ body {
   border-top-left-radius: 2.5rem;
   border-top-right-radius: 2.5rem;
   background-color: var(--white);
+  max-width: 60em;
 }
 
 .label-bill-amount,
