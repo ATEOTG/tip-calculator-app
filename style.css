@@ -208,6 +208,10 @@ body {
   outline: none;
   box-shadow: 0 0 0 0.2rem hsl(172, 67%, 45%);
 }
+#number-people[error]:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem #e17052;
+}
 
 /* Styling tip-box elements */
 .tip-amount-text {
