@@ -112,5 +112,3 @@ resetBtn.addEventListener("click", function () {
   peopleInpt.removeAttribute("error");
   errorZero.classList.remove("error");
 });
-
-// error when customVar is zero and curr Chosen Percent is 0

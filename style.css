@@ -155,6 +155,9 @@ body {
   border-radius: 5px;
   padding: 0.3em 0;
 }
+.tip-number:hover {
+  cursor: pointer;
+}
 
 .custom-form {
   display: grid;
@@ -251,6 +254,10 @@ body {
   padding: 0.5em 0;
 }
 
+.reset:hover {
+  cursor: pointer;
+}
+
 /* styling on click*/
 .clicked.tip-number {
   background-color: var(--cyan-str);
@@ -259,4 +266,54 @@ body {
 
 .error.error-zero {
   display: block;
+}
+
+/* media 1000px */
+@media (min-width: 62.5em) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+
+  .container {
+    height: auto;
+  }
+
+  .logo {
+    margin: 14em 0 8em 0;
+  }
+  .calculator {
+    width: 45%;
+    margin: 3em 0;
+  }
+
+  .tip-box {
+    width: 55%;
+    margin: 3em 0;
+    padding: 2em 4em;
+    /* align-self: flex-start; */
+  }
+
+  .tip-number-cont {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .tip-amount {
+    align-items: center;
+  }
+
+  .calculator-cont {
+    flex-direction: row;
+    max-width: 92em;
+    border-radius: 2.5em;
+    box-shadow: 0.5rem 0.5rem 3rem rgba(0, 0, 0, 0.048);
+  }
+
+  .currency-text {
+    font-size: 4.8rem;
+  }
+
+  .reset {
+    margin-top: 5em;
+  }
 }
