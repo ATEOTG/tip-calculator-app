@@ -31,9 +31,19 @@ const enterCalc = function () {
   const billVal = document.getElementById("bill-amount").value;
   const numberVal = document.getElementById("number-people").value;
   const customVal = document.getElementById("custom").value;
+
   //   this is to get the value of tip amount per person
   let tipValue;
   let totalValue;
+
+  //   checks for zero division
+  if (numberVal == 0) {
+    peopleInpt.setAttribute("error", "1");
+    return;
+  }
+  if (peopleInpt.hasAttribute("error")) {
+    peopleInpt.removeAttribute("error");
+  }
 
   //   We want to account for cases where user enters a custom amount
   if (customVal) {
