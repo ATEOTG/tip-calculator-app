@@ -4,6 +4,9 @@
 
 For people who want to split the tip: Calculates the tip per person and total amount per person. 
 
+# Instructions
+input numbers in the text fields, select the tip percentage, and then hit enter in a text field and get your results!
+
 # Screenshots
 
 ## Desktop Version
