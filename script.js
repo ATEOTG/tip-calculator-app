@@ -2,6 +2,7 @@
 
 const resetBtn = document.querySelector(".reset");
 const errorZero = document.querySelector(".error-zero");
+const errorStr = document.querySelector(".error-string");
 
 const billForm = document.querySelector(".bill");
 const numberForm = document.querySelector(".number-people-box");
@@ -38,14 +39,29 @@ const enterCalc = function () {
   let totalValue;
 
   //   checks for zero division
-  if (numberVal == 0) {
+  if (+numberVal === 0) {
+    // reset the error values first
+    errorZero.classList.remove("error");
+    errorStr.classList.remove("error");
+
     peopleInpt.setAttribute("error", "1");
     errorZero.classList.add("error");
+    return;
+  }
+  //   checks for string error
+  if (!+numberVal) {
+    // reset the error values first
+    errorZero.classList.remove("error");
+    errorStr.classList.remove("error");
+
+    peopleInpt.setAttribute("error", "1");
+    errorStr.classList.add("error");
     return;
   }
   if (peopleInpt.hasAttribute("error")) {
     peopleInpt.removeAttribute("error");
     errorZero.classList.remove("error");
+    errorStr.classList.remove("error");
   }
 
   //   We want to account for cases where user enters a custom amount
@@ -54,14 +70,13 @@ const enterCalc = function () {
     totalValue = +billVal / +numberVal;
     totalValue += +tipValue;
   } else {
-    console.log(currChosenPercent);
     tipValue = (+billVal * +currChosenPercent) / numberVal;
-    console.log(tipValue);
     totalValue = +billVal / +numberVal;
     totalValue += +tipValue;
   }
 
   //   display calculations
+
   tipAmount.innerHTML = `$${twoDecimal(tipValue)}`;
   totalAmount.innerHTML = `$${totalValue.toFixed(2)}`;
 };
@@ -111,4 +126,5 @@ resetBtn.addEventListener("click", function () {
 
   peopleInpt.removeAttribute("error");
   errorZero.classList.remove("error");
+  errorStr.classList.remove("error");
 });

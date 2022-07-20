@@ -229,6 +229,13 @@ body {
   font-size: 1.6rem;
   color: #e17457;
 }
+
+.error-string {
+  display: none;
+  font-size: 1.6rem;
+  color: #e17457;
+}
+
 /* Styling tip-box elements */
 .tip-amount-text {
   color: var(--white);
@@ -268,6 +275,10 @@ body {
   display: block;
 }
 
+.error.error-string {
+  display: block;
+}
+
 /* media 1000px */
 @media (min-width: 62.5em) {
   body {
@@ -291,7 +302,6 @@ body {
     width: 55%;
     margin: 3em 0;
     padding: 2em 4em;
-    /* align-self: flex-start; */
   }
 
   .tip-number-cont {
