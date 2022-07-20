@@ -1,6 +1,7 @@
 "use strict";
 
 const resetBtn = document.querySelector(".reset");
+const errorZero = document.querySelector(".error-zero");
 
 const billForm = document.querySelector(".bill");
 const numberForm = document.querySelector(".number-people-box");
@@ -39,10 +40,12 @@ const enterCalc = function () {
   //   checks for zero division
   if (numberVal == 0) {
     peopleInpt.setAttribute("error", "1");
+    errorZero.classList.add("error");
     return;
   }
   if (peopleInpt.hasAttribute("error")) {
     peopleInpt.removeAttribute("error");
+    errorZero.classList.remove("error");
   }
 
   //   We want to account for cases where user enters a custom amount
