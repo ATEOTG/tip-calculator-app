@@ -213,6 +213,17 @@ body {
   box-shadow: 0 0 0 0.2rem #e17052;
 }
 
+.label-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.error-zero {
+  display: none;
+  font-size: 1.6rem;
+  color: #e17457;
+}
 /* Styling tip-box elements */
 .tip-amount-text {
   color: var(--white);
@@ -242,4 +253,8 @@ body {
 .clicked.tip-number {
   background-color: var(--cyan-str);
   color: var(--cyan-drk);
+}
+
+.error.error-zero {
+  display: block;
 }
