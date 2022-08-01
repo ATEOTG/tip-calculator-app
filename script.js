@@ -93,7 +93,7 @@ const enterCalc = function () {
 tipPercents.forEach((tip) =>
   tip.addEventListener("click", function () {
     // remove the clicked class once you click on a new tip-number
-    tipPercents.forEach((tip) => tip.classList.remove("clicked"));
+    currClicked.classList.remove("clicked");
 
     // also reset custom val
     document.getElementById("custom").value = "";
