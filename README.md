@@ -1,6 +1,6 @@
 # Frontend Mentor - Tip calculator app
 
-
+Visit Website Here: [Tip Calculator App](https://ateotg.github.io/tip-calculator-app/)
 
 For people who want to split the tip: Calculates the tip per person and total amount per person. 
 
